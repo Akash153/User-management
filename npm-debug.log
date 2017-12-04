@@ -1,0 +1,85 @@
+0 info it worked if it ends with ok
+1 verbose cli [ 'C:\\Program Files\\nodejs\\node.exe',
+1 verbose cli   'C:\\Program Files\\nodejs\\node_modules\\npm\\bin\\npm-cli.js',
+1 verbose cli   'publish' ]
+2 info using npm@3.10.10
+3 info using node@v6.11.3
+4 verbose publish [ '.' ]
+5 silly cache add args [ '.', null ]
+6 verbose cache add spec .
+7 silly cache add parsed spec Result {
+7 silly cache add   raw: '.',
+7 silly cache add   scope: null,
+7 silly cache add   escapedName: null,
+7 silly cache add   name: null,
+7 silly cache add   rawSpec: '.',
+7 silly cache add   spec: 'F:\\mean',
+7 silly cache add   type: 'directory' }
+8 verbose addLocalDirectory C:\Users\map\AppData\Roaming\npm-cache\mean\1.0.0\package.tgz not in flight; packing
+9 verbose correctMkdir C:\Users\map\AppData\Roaming\npm-cache correctMkdir not in flight; initializing
+10 info lifecycle mean@1.0.0~prepublish: mean@1.0.0
+11 silly lifecycle mean@1.0.0~prepublish: no script for prepublish, continuing
+12 verbose tar pack [ 'C:\\Users\\map\\AppData\\Roaming\\npm-cache\\mean\\1.0.0\\package.tgz',
+12 verbose tar pack   'F:\\mean' ]
+13 verbose tarball C:\Users\map\AppData\Roaming\npm-cache\mean\1.0.0\package.tgz
+14 verbose folder F:\mean
+15 verbose addLocalTarball adding from inside cache C:\Users\map\AppData\Roaming\npm-cache\mean\1.0.0\package.tgz
+16 verbose correctMkdir C:\Users\map\AppData\Roaming\npm-cache correctMkdir not in flight; initializing
+17 silly cache afterAdd mean@1.0.0
+18 verbose afterAdd C:\Users\map\AppData\Roaming\npm-cache\mean\1.0.0\package\package.json not in flight; writing
+19 verbose correctMkdir C:\Users\map\AppData\Roaming\npm-cache correctMkdir not in flight; initializing
+20 verbose afterAdd C:\Users\map\AppData\Roaming\npm-cache\mean\1.0.0\package\package.json written
+21 silly publish { name: 'mean',
+21 silly publish   version: '1.0.0',
+21 silly publish   description: 'Mean App',
+21 silly publish   main: 'server.js',
+21 silly publish   scripts:
+21 silly publish    { test: 'echo "Error: no test specified" && exit 1',
+21 silly publish      start: 'node server.js' },
+21 silly publish   author: { name: 'MaheFc' },
+21 silly publish   license: 'ISC',
+21 silly publish   dependencies:
+21 silly publish    { 'body-parser': '^1.18.2',
+21 silly publish      bootstrap: '^3.3.7',
+21 silly publish      cors: '^2.8.4',
+21 silly publish      express: '^4.16.1',
+21 silly publish      mongoose: '^4.11.13' },
+21 silly publish   readme: 'ERROR: No README data found!',
+21 silly publish   _id: 'mean@1.0.0',
+21 silly publish   _shasum: 'e5f0b7ee0c0fd464cf04e5e16e8d536989b09d82',
+21 silly publish   _from: '.' }
+22 verbose getPublishConfig undefined
+23 silly mapToRegistry name mean
+24 silly mapToRegistry using default registry
+25 silly mapToRegistry registry https://registry.npmjs.org/
+26 silly mapToRegistry data Result {
+26 silly mapToRegistry   raw: 'mean',
+26 silly mapToRegistry   scope: null,
+26 silly mapToRegistry   escapedName: 'mean',
+26 silly mapToRegistry   name: 'mean',
+26 silly mapToRegistry   rawSpec: '',
+26 silly mapToRegistry   spec: 'latest',
+26 silly mapToRegistry   type: 'tag' }
+27 silly mapToRegistry uri https://registry.npmjs.org/mean
+28 verbose publish registryBase https://registry.npmjs.org/
+29 silly publish uploading C:\Users\map\AppData\Roaming\npm-cache\mean\1.0.0\package.tgz
+30 verbose stack Error: auth required for publishing
+30 verbose stack     at CachingRegistryClient.publish (C:\Program Files\nodejs\node_modules\npm\node_modules\npm-registry-client\lib\publish.js:30:14)
+30 verbose stack     at C:\Program Files\nodejs\node_modules\npm\lib\publish.js:138:14
+30 verbose stack     at mapToRegistry (C:\Program Files\nodejs\node_modules\npm\lib\utils\map-to-registry.js:62:3)
+30 verbose stack     at publish_ (C:\Program Files\nodejs\node_modules\npm\lib\publish.js:107:3)
+30 verbose stack     at Array.<anonymous> (C:\Program Files\nodejs\node_modules\npm\node_modules\slide\lib\bind-actor.js:15:8)
+30 verbose stack     at LOOP (C:\Program Files\nodejs\node_modules\npm\node_modules\slide\lib\chain.js:15:14)
+30 verbose stack     at LOOP (C:\Program Files\nodejs\node_modules\npm\node_modules\slide\lib\chain.js:14:28)
+30 verbose stack     at chain (C:\Program Files\nodejs\node_modules\npm\node_modules\slide\lib\chain.js:20:5)
+30 verbose stack     at C:\Program Files\nodejs\node_modules\npm\lib\publish.js:73:5
+30 verbose stack     at RES (C:\Program Files\nodejs\node_modules\npm\node_modules\inflight\inflight.js:23:14)
+31 verbose cwd F:\mean
+32 error Windows_NT 10.0.15063
+33 error argv "C:\\Program Files\\nodejs\\node.exe" "C:\\Program Files\\nodejs\\node_modules\\npm\\bin\\npm-cli.js" "publish"
+34 error node v6.11.3
+35 error npm  v3.10.10
+36 error code ENEEDAUTH
+37 error need auth auth required for publishing
+38 error need auth You need to authorize this machine using `npm adduser`
+39 verbose exit [ 1, true ]
