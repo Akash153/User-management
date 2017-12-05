@@ -48,27 +48,6 @@ app.get('/employees', function(req, res) {
     });
     });
 
-    describe('/POST employees', () => {
-      it('it should not POST an employee data without name', (done) => {
-        let employees = {
-          name: "Kamali",
-          position : "Developer",
-          department : "IT",
-          salary : "50000"
-        }
-        chai.request(server)
-            .post('/employees')
-            .send(employees)
-            .end((err, res) => {
-                res.should.have.status(200);
-                expect(response.name).to.equal('Kamali')
-                expect(response.position).to.equal('Developer')
-                expect(response.department).to.equal('IT')
-                expect(response.salary).to.equal('50000')
-                
-              done();
-            });
-      });
-    });
+    
     
   
